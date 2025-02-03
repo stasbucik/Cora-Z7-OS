@@ -504,7 +504,7 @@ CONFIG_can-utils=y
 #
 # nfs-utils 
 #
-CONFIG_nfs-utils=y
+# CONFIG_nfs-utils is not set
 # CONFIG_nfs-utils-dev is not set
 # CONFIG_nfs-utils-client is not set
 # CONFIG_nfs-utils-stats is not set
@@ -521,7 +521,7 @@ CONFIG_nfs-utils=y
 # CONFIG_openssh-ssh is not set
 # CONFIG_openssh-dev is not set
 # CONFIG_openssh-sftp is not set
-# CONFIG_openssh-sftp-server is not set
+CONFIG_openssh-sftp-server=y
 # CONFIG_openssh-scp is not set
 
 #
@@ -2468,7 +2468,7 @@ CONFIG_packagegroup-core-boot=y
 #
 # packagegroup-core-buildessential 
 #
-# CONFIG_packagegroup-core-buildessential is not set
+CONFIG_packagegroup-core-buildessential=y
 # CONFIG_packagegroup-core-buildessential-dev is not set
 # CONFIG_packagegroup-core-buildessential-dbg is not set
 
@@ -2482,7 +2482,7 @@ CONFIG_packagegroup-core-boot=y
 #
 # packagegroup-core-ssh-dropbear 
 #
-# CONFIG_packagegroup-core-ssh-dropbear is not set
+CONFIG_packagegroup-core-ssh-dropbear=y
 # CONFIG_packagegroup-core-ssh-dropbear-dbg is not set
 # CONFIG_packagegroup-core-ssh-dropbear-dev is not set
 
@@ -3322,7 +3322,7 @@ CONFIG_bridge-utils=y
 #
 # dosfstools 
 #
-CONFIG_dosfstools=y
+# CONFIG_dosfstools is not set
 # CONFIG_dosfstools-dev is not set
 # CONFIG_dosfstools-dbg is not set
 
@@ -3825,21 +3825,26 @@ CONFIG_u-boot-tools=y
 #
 # Image Features
 #
-# CONFIG_imagefeature-ssh-server-dropbear is not set
-CONFIG_imagefeature-ssh-server-openssh=y
+CONFIG_imagefeature-ssh-server-dropbear=y
+# CONFIG_imagefeature-ssh-server-openssh is not set
 CONFIG_imagefeature-hwcodecs=y
 # CONFIG_imagefeature-package-management is not set
-# CONFIG_imagefeature-debug-tweaks is not set
+CONFIG_imagefeature-debug-tweaks=y
 # CONFIG_imagefeature-empty-root-password is not set
 # CONFIG_imagefeature-serial-autologin-root is not set
-# CONFIG_Init-manager-systemd is not set
-CONFIG_Init-manager-sysvinit=y
+CONFIG_Init-manager-systemd=y
+# CONFIG_Init-manager-sysvinit is not set
 
 #
 # user packages 
 #
-# CONFIG_gpio-demo is not set
-# CONFIG_peekpoke is not set
+CONFIG_libgpio=y
+CONFIG_libpwm=y
+CONFIG_libuio=y
+CONFIG_gpio-demo=y
+CONFIG_gpioutil=y
+CONFIG_peekpoke=y
+CONFIG_pwmdemo=y
 
 #
 # PetaLinux RootFS Settings
