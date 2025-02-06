@@ -5,10 +5,6 @@
 	model = "Zynq Cora Z7 Development Board";
 	compatible = "digilent,zynq-coraz7", "xlnx,zynq-7000";
 
-	chosen {
-		bootargs = "console=ttyPS0,115200 earlyprintk uio_pdrv_genirq.of_id=generic-uio";
-	};
-
 	usb_phy0: phy0@e0002000 {
 		compatible = "ulpi-phy";
 		#phy-cells = <0>;
@@ -42,6 +38,7 @@
 };
 &sdhci0 {
 	u-boot,dm-pre-reloc;
+	disable-wp;
 };
 &uart0 {
 	u-boot,dm-pre-reloc;
