@@ -1,0 +1,23 @@
+From 331e0b099c0ed3839a3e47ca2f7811edd6f5d733 Mon Sep 17 00:00:00 2001
+From: stasbucik <53035783+stasbucik@users.noreply.github.com>
+Date: Thu, 6 Feb 2025 17:02:27 +0100
+Subject: [PATCH] Reduce ANEG_TIMEOUT
+
+Signed-off-by: stasbucik <53035783+stasbucik@users.noreply.github.com>
+---
+ include/phy.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/phy.h b/include/phy.h
+index 6ace9b3a0c..a75455c8b7 100644
+--- a/include/phy.h
++++ b/include/phy.h
+@@ -51,7 +51,7 @@
+ 				SUPPORTED_10000baseT_Full)
+ 
+ #ifndef PHY_ANEG_TIMEOUT
+-#define PHY_ANEG_TIMEOUT	4000
++#define PHY_ANEG_TIMEOUT	40
+ #endif
+ 
+ 

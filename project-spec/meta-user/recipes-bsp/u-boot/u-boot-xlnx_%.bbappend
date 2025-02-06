@@ -2,6 +2,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 SRC_URI += "file://platform-top.h \
             file://devtool-fragment.cfg \
+            file://0001-Reduce-ANEG_TIMEOUT.patch \
             "
 
 do_configure_append () {
